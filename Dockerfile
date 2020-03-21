@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.11.3
 
 MAINTAINER maxid <maxid@qq.com>
 LABEL description='Webmin + Bind9 + Nginx: Provide Extensive DNS for local area networks'
@@ -7,8 +7,8 @@ LABEL description='Webmin + Bind9 + Nginx: Provide Extensive DNS for local area 
 # https://github.com/smebberson/docker-alpine
 # https://github.com/just-containers/base-alpine
 
-ARG S6_OVERLAY_VERSION=v1.21.2.2 
-ARG WEBMIN_VERSION=1.890 
+ARG S6_OVERLAY_VERSION=v1.22.1.0 
+ARG WEBMIN_VERSION=1.941 
 
 COPY config/webmin.exp /
 
